@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect, useRef, useCallback } from "react";
+import { Analytics } from '@vercel/analytics/react';
 
 function useAudio() {
   const speak = (text, rate = 0.85) => {
@@ -1023,6 +1024,7 @@ export default function App() {
           </button>
         ))}
       </div>
+      <Analytics />
     </div>
   );
 
